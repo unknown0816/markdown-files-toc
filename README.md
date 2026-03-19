@@ -28,7 +28,7 @@ When you maintain a large collection of notes, docs, or tutorials you often need
 - **Root‑level file exclusion** – the script ignores the Markdown file that lives directly in the root directory (commonly a README you are already editing).
 - **Root-level file exclusion** – in case the parameter --ignore is provided only the root level file with this name is ignored.
 - **Zero‑dependency** – pure Python (≥ 3.7).
-- **Depth ident** – the resulting list will have indent for each directory depth. Excluding index.md, README.md and markdown files alone in a directory.
+- **Depth indent** – the resulting list will have indent for each directory depth. Excluding index.md, README.md and markdown files alone in a directory.
 
 ## Prerequisites  
 
