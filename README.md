@@ -26,7 +26,9 @@ When you maintain a large collection of notes, docs, or tutorials you often need
 - **First‑level heading extraction** (`# Heading`) for human‑readable link titles.
 - **Graceful fallback** to the file name (without extension) when no heading is present.
 - **Root‑level file exclusion** – the script ignores the Markdown file that lives directly in the root directory (commonly a README you are already editing).
+- **Root-level file exclusion** – in case the parameter --ignore is provided only the root level file with this name is ignored.
 - **Zero‑dependency** – pure Python (≥ 3.7).
+- **Depth ident** – the resulting list will have indent for each directory depth. Excluding index.md, README.md and markdown files alone in a directory.
 
 ## Prerequisites  
 
@@ -42,5 +44,6 @@ python markdown\_indexer.py \<root\_directory\>
 | Argument | Description |
 |----------|-------------|
 | \`root\_directory\` | Path to the directory you want to scan. The script will walk this path recursively. |
+|--ignore \`markdown\_file\` | Only this markdown file in the root directory is ignored. |
 
 The script writes the generated Markdown list to **STDOUT**, so you can pipe it into a file or another command.
